@@ -1,6 +1,6 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
-
 
 // Formula
 // index = x * 5 + y
@@ -28,7 +28,7 @@ int main() {
         }
 
         cout << "Enter w/a/s/d or q to quit: ";
-        cin >> control;
+        control = _getch();
 
         if (control != 'q') {
             grid[position] = '*';
@@ -42,7 +42,7 @@ int main() {
                     position -= 1;
                 }
             } else if (control == 's') {
-                if (position + 5 <= 24 {
+                if (position + 5 <= 24) {
                     position += 5;
                 }
             } else if (control == 'd') {
